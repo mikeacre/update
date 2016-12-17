@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Spark</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/activities.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1270175226371967',
+	      xfbml      : true,
+	      version    : 'v2.6'
+	    });
+	  };
+		FB.getLoginStatus(function(response) {
+		  if (response.status === 'connected') {
+		    console.log('Logged in.');
+		  }
+		  else {
+		    FB.login();
+		  }
+		});
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
+		<!-- Page Wrapper -->
+			<div id="wrapper">
+
+
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<a href="index.html" class="logo">
+											<div class="logo"><span class="icon fa-fire"></span><span class="title">Spark</span></div>
+
+										</a>
+										<h2>This is Spark</h2>
+
+									<!-- Nav -->
+										<nav>
+											<ul>
+												<li><a href="#menu">Menu</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+						<!-- Menu -->
+						<nav id="menu">
+							<h2>Menu</h2>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="activities.html">Activities</a></li>
+								<li><a href="logout.html">Log Out</a></li>
+								<li><a href="userhome.html">Account Settings</a></li>
+								<li><a href="cart.html">Cart</a></li>
+							</ul>
+						</nav>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
